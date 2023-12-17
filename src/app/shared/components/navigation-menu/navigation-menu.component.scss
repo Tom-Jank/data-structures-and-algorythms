@@ -1,0 +1,9 @@
+@import '../../../../styles.scss';
+
+.mat-toolbar {
+    display: flex;
+    background-color: $perfect-blue;
+    color: $snow-white;
+    font: $font-stack;
+    gap: 50px;
+}

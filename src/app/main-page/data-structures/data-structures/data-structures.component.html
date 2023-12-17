@@ -1,0 +1,13 @@
+<div class="cards">
+    @for (card of cards; track card.id) {
+        <!-- Here check if showing id in route is safe enough -->
+        <a [routerLink]="['/', card.id]">
+            <app-card-component 
+                [title]="card.title" 
+                [content]="card.content" 
+                [image]="card.image">
+                [image]="card.image">
+            </app-card-component>
+        </a>
+    } @empty { <h1> Unable to retrieve the data. Try again later... </h1> }
+</div>

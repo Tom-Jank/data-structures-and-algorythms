@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+$font-stack: Verdana, sans-serif;
+$charcoal:   #343434;
+$perfect-blue: #0F2C59;
+$snow-white: #FAF9F6;
+$safari: #DAC0A3;
+$cream: #F8F0E5;
+
+
+
+@mixin regular-font {
+    font: $font-stack;
+    color: $charcoal;
+}
+
+html, body { height: 100%; background-color: $cream; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a:link, a:visited { color: inherit; text-decoration: none; }
